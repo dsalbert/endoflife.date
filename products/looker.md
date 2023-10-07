@@ -5,7 +5,7 @@ tags: google
 iconSlug: looker
 permalink: /looker
 releasePolicyLink: https://cloud.google.com/looker/docs/release-overview
-releaseImage: https://cloud.google.com/static/looker/docs/images/2022-std-supp-releases.png
+releaseImage: https://cloud.google.com/static/looker/docs/images/2023-std-supp-releases.png
 changelogTemplate: "https://cloud.google.com/looker/docs/looker-{{'__RELEASE_CYCLE__'|split:'.'|first}}-changelog#{{'__RELEASE_CYCLE__'|replace:'.',''}}"
 LTSLabel: "<abbr title='Extended Support Release'>ESR</abbr>"
 eolColumn: Support Status
@@ -13,7 +13,56 @@ activeSupportColumn: false
 releaseColumn: false
 releaseDateColumn: true
 
+# Used only for detecting new minor releases.
+auto:
+-   custom: true
+
+# ESR dates visible on https://cloud.google.com/looker/docs/standard-extended-support-release-program-overview.
+# or https://cloud.google.com/static/looker/docs/images/2023-std-supp-releases.png.
 releases:
+-   releaseCycle: "23.16"
+    releaseDate: 2023-09-13
+    eol: 2023-12-12
+
+-   releaseCycle: "23.14"
+    releaseDate: 2023-08-09
+    eol: 2023-11-08
+
+-   releaseCycle: "23.12"
+    releaseDate: 2023-07-12
+    lts: 2023-09-07
+    eol: 2023-11-30
+
+-   releaseCycle: "23.10"
+    releaseDate: 2023-06-14
+    eol: 2023-09-13
+
+-   releaseCycle: "23.8"
+    releaseDate: 2023-05-10
+    eol: 2023-08-09
+
+-   releaseCycle: "23.6"
+    releaseDate: 2023-04-14
+    lts: 2023-06-05
+    eol: 2023-08-31
+
+-   releaseCycle: "23.4"
+    releaseDate: 2023-03-14
+    eol: 2023-06-13
+
+-   releaseCycle: "23.2"
+    releaseDate: 2023-02-10
+    eol: 2023-05-09
+
+-   releaseCycle: "23.0"
+    releaseDate: 2023-01-11
+    lts: 2023-03-07
+    eol: 2023-05-31
+
+-   releaseCycle: "22.20"
+    releaseDate: 2022-11-14
+    eol: 2023-03-13
+
 -   releaseCycle: "22.18"
     releaseDate: 2022-10-17
     lts: 2022-12-01
@@ -21,7 +70,7 @@ releases:
 
 -   releaseCycle: "22.16"
     releaseDate: 2022-09-19
-    eol: 2022-12-19 # Update once 23.0 is released ?
+    eol: 2022-12-18
 
 -   releaseCycle: "22.14"
     releaseDate: 2022-08-15
@@ -145,7 +194,7 @@ will be patched back to the currently supported ESR releases. Participants in th
 required to pair production instances with staging instances. A ESR release is kept in
 "ESR-staging" for a month, where it is considered "pre-stable".
 
-![ESR release schedule image](https://cloud.google.com/static/looker/docs/images/2022-std-esr-supp-releases.png)
+![ESR release schedule image](https://cloud.google.com/static/looker/docs/images/2023-std-esr-supp-releases.png)
 
 ## [Notifications][emails]
 
